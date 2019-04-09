@@ -15,7 +15,7 @@ echo "Cloning drupal module: " . "$1" . ":" . "$2"
 cd  ~/Sites/patch_sites/"$1"/web/modules;
 mkdir contrib
 echo "Cloning repository for " . "1";
-git clone --branch "$2" https://git.drupal.org/project/"$1".git
+git clone --branch "$2" https://git.drupalcode.org:project/"$1".git
 echo "Enbabling module: " . "$1"
 lando drush @self en "$1" -y;
 echo "Changing directories to "$1""; 
